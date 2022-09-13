@@ -1,0 +1,80 @@
+:root {
+    --primary-color: #EF6461;
+    --bg-color: #E8E9EB;
+    --text-color: #313638;
+    --secondary-color: #E4B363;
+    --card-color: #E0DFD5;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.original {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.original div {
+    padding: .5rem 1rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    background: var(--card-color);
+    border-radius: 5px;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+}
+
+.content {
+    width: 550px;
+    height: 550px;
+    border: 1px solid var(--text-color);
+    background: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 10px;
+}
+
+.btn-container .btn {
+    margin: 1rem 1rem 0 0;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: 1s ease ease;
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.btn-container .btn:hover {
+    background: var(--secondary-color);
+}
+
+.input {
+    display: flex;
+    margin: 25px auto;
+}
+
+.input input {
+    font-size: 2rem;
+    outline: 0;
+}
+
+.spinner {
+    display: flex;
+    font-size: 2rem;
+    background: var(--bg-color);
+}
